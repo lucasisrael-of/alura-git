@@ -1,0 +1,12 @@
+git init
+git status
+git add arquivo [ou . para todos os arquivos]
+git commit -m "mensagem"
+git add --bare [para adicionar um repositorio que não armazena copias]
+git remote add caminho_branch_remota
+git remote rename nome_atual_branch_remota novo_nome_branch_remota
+git remote remove nome_branch_remota_remover
+git clone branch_remota branch_local // clona um repositorio remoto para um local
+git push branch_remota branch_local // envia alteracoes ao servidor remoto
+git pull branch_remote branch_local // traz ou atualiza brancho local com a versao atual da branch do servidor
+
