@@ -14,6 +14,11 @@ git log // mostra logs das alteracoes feitas
 
 git log -p // mostra log das alteracoes feitas 
 
+git log --graph // ve as alterações em forma de grafico de arvore
+
+git log --oneline // ve as alterações em apenas uma linha
+
+
 
 ### REPOSITORIOS REMOTOS
 
@@ -28,6 +33,7 @@ git clone branch_remota branch_local // clona um repositorio remoto para um loca
 git push branch_remota branch_local // envia alteracoes ao servidor remoto
 
 git pull branch_remote branch_local // traz ou atualiza brancho local com a versao atual da branch do servidor
+
 
 
 ### CRIANDO LINHAS DE EDIÇÃO DIFERENTES - BRANCHS
@@ -47,3 +53,31 @@ git rebase <nome_branch> // traz atualizacoes de uma branch especificada para de
 git branch -d <nome_branch> // remove uma branch
 
 
+
+### CTRL Z no git
+
+git checkout -- <file> // desfazer uma alteração ainda não marcada com add
+
+git reset HEAD <file> // desfaz alterações mesmo depois de marcado
+
+git revert <hash> // faz um novo commit revertando o commit marcado
+
+
+### Salvando alterações para um local temporário
+
+git stash // salva as alterações
+
+
+
+### Viajar no tempo para ver alterações passadas
+
+git checkout <hash> // muda para um determinado tempo apontado pelo hash
+
+
+### Ver alterações
+
+git diff hash_inicia..hash_final
+
+### Marcando uma versao
+
+git tag -a <nome_versao> -m "mensagem sobre a versão
