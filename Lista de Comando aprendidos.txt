@@ -44,4 +44,6 @@ git merge <nome_branch_que_sera_unida_a_branch_atual> // uni branchs
 
 git rebase <nome_branch> // traz atualizacoes de uma branch especificada para dentro da branch atual
 
+git branch -d <nome_branch> // remove uma branch
+
 
