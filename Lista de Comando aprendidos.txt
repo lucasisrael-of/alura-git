@@ -1,12 +1,47 @@
-git init
-git status
-git add arquivo [ou . para todos os arquivos]
-git commit -m "mensagem"
+### COMANDOS INICIAIS
+
+git init // inicia um repositorio git em um diretório do sistema
+
+git status // mostra o status atual do git neste repositorio
+
+git add arquivo [ou . para todos os arquivos] // adiciona arquivos a lista de arquivo para commitagem
+
+git commit -m "mensagem" // commita (grava) as alteracoes realizadas
+
 git add --bare [para adicionar um repositorio que não armazena copias]
+
+git log // mostra logs das alteracoes feitas
+
+git log -p // mostra log das alteracoes feitas 
+
+
+### REPOSITORIOS REMOTOS
+
 git remote add caminho_branch_remota
+
 git remote rename nome_atual_branch_remota novo_nome_branch_remota
+
 git remote remove nome_branch_remota_remover
+
 git clone branch_remota branch_local // clona um repositorio remoto para um local
+
 git push branch_remota branch_local // envia alteracoes ao servidor remoto
+
 git pull branch_remote branch_local // traz ou atualiza brancho local com a versao atual da branch do servidor
-Alterando aqui
+
+
+### CRIANDO LINHAS DE EDIÇÃO DIFERENTES - BRANCHS
+
+git branch // mostra as branchs disponíveis
+
+git branch <nome_branch> // cria uma branch nova com o nome especificado
+
+git checkout <nome_branch> // muda para a branch informada
+
+git checkout -b <nome_branch> // cria uma nova branch e muda para ela
+
+git merge <nome_branch_que_sera_unida_a_branch_atual> // uni branchs
+
+git rebase <nome_branch> // traz atualizacoes de uma branch especificada para dentro da branch atual
+
+
